@@ -5,4 +5,16 @@ services:
     ports:
       - "8080:8000"
     volumes:
-      - ./app:/app
+      - .:/app
+      - ./pytest.ini:/app/pytest.ini
+    environment:
+      - PYTHONPATH=/app
+
+  test:
+    build: .
+    command: [ "pytest", "tests" ]
+    volumes:
+      - .:/app
+      - ./pytest.ini:/app/pytest.ini
+    environment:
+      - PYTHONPATH=/app

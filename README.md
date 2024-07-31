@@ -54,4 +54,13 @@ This project is a REST API built with FastAPI to manage car product details. It 
 - `docker-compose.yml`: Docker Compose configuration to run the application.
 - `requirements.txt`: Python dependencies.
 - `.gitignore`: Specifies files and directories to be ignored by git.
+- `tests/test_main.py`: Contains the test cases for the API endpoints.
 
+## Running Tests
+
+To run the tests for this project using Docker Compose, follow these steps:
+
+1. **Build and run the tests**:
+    ```bash
+    docker-compose run test
+    ```
