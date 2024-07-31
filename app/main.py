@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Path, Body
 from pydantic import BaseModel
-from models import products, Product
+from app.models import products, Product
 
 app = FastAPI()
 
